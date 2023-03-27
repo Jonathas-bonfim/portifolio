@@ -1,0 +1,82 @@
+@import "src/sass/variables.scss";
+@import "src/sass/mixins.scss";
+
+.header-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 109px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    max-width: $max-width-container-center;
+    width: 100%;
+    border-bottom: 2px solid $dark-200;
+  }
+
+  .container-center-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: $max-width-container-center;
+    width: 100%;
+  }
+
+  .button {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fz-24;
+    line-height: 29px;
+    color: $blue;
+
+    border: none;
+    background: transparent;
+
+    @include shiny-button(
+      $width: 60px,
+      $alpha: 0.4,
+      $transition: 500ms,
+      $disable: false
+    );
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 62px;
+
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: $fz-18;
+      line-height: 22px;
+      text-decoration: none;
+      color: $gray-light;
+
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      transition: all 0.2s;
+      &:hover {
+        filter: brightness(1.5);
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          border: 1px solid $blue;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
