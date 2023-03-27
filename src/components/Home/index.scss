@@ -1,0 +1,98 @@
+@import "src/sass/variables.scss";
+@import "src/sass/mixins.scss";
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  width: 100%;
+  height: 39.063rem;
+  background-color: $dark;
+
+  .container-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    max-width: $max-width-container-center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-left {
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: $fz-64;
+      line-height: 77px;
+      text-transform: uppercase;
+      color: $blue;
+
+      margin-bottom: $fz-12;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: $fz-24;
+      line-height: 29px;
+      color: $light;
+
+      margin-bottom: $fz-12;
+    }
+    .career {
+      margin-bottom: $fz-74;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: $fz-18;
+
+    width: 100%;
+    height: auto;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 160px;
+      height: 45px;
+      border-radius: 4px;
+
+      color: $light;
+      text-decoration: none;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      transition: all 0.2s;
+      &:hover {
+        filter: brightness(1.5);
+      }
+    }
+    .linkedin {
+      // border: 2px solid #0a66c2;
+      border-image: linear-gradient(to left bottom, #10d7e2 40%, #9358f7 90%) 1;
+      border-width: 2px;
+      border-style: solid;
+    }
+    .github {
+      border-image: linear-gradient(to right bottom, #d24074, #6518b4) 1;
+      border-width: 2px;
+      border-style: solid;
+    }
+  }
+
+  .container-right {
+    position: absolute;
+    right: 0;
+  }
+}

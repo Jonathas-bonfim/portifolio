@@ -1,12 +1,6 @@
+
 export function About() {
   return (
-    <section className="about-me">
-      <aside>
-
-      </aside>
-      <main>
-
-      </main>
-    </section>
+    <h1>Sobre mim</h1>
   )
 }
