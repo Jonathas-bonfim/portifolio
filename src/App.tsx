@@ -1,4 +1,5 @@
 import { About } from './components/about'
+import { Experiences } from './components/Experiences'
 import { Header } from './components/Header'
 import { Home } from './components/Home'
 import './global/styles.scss'
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Experiences />
     </>
   )
 }
