@@ -6,13 +6,14 @@
   .container-center {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     margin: 0 auto;
     max-width: $max-width-container-center;
     height: 100%;
 
     position: relative;
+    margin-top: 8rem;
   }
 
   .title-section {
@@ -70,8 +71,8 @@
     .details {
       position: absolute;
       left: 13rem;
-      top: 5.875rem;
-      transform: translateY(50%);
+      top: 1.875rem;
+      transform: translateY(8%);
 
       opacity: 1;
       visibility: visible;
