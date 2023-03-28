@@ -30,8 +30,8 @@ const experiences: ExperiencesProps[] = [
     id: 3,
     role: 'Qualitaty Assurance Developer',
     time: {
-      initial: '2022-06-22',
-      finally: '2023-03-20'
+      initial: 'Fev 2017',
+      finally: 'Jun 2022'
     },
     company: 'Atual Sistemas',
     description: 'Atuei também como Qualitaty Assurance Developer, ajudei no processo de implementar testes automatizados do sistema ERP onde o tempo para disponibilizar atualizações foi reduzido em 50% e o tamanho dos arquivos em 60%, organizava o repositório no github, definia as tarefas prioritárias para a sprint e auxiliava nas demandas da equipe. Implantei um projeto onde foi possível atualizar mais de 3000 mil clientes de forma automática resultando em redução de custos consideráveis para a empresa.',
