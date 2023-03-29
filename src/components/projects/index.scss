@@ -31,7 +31,7 @@
     margin-bottom: 5.625rem;
     .image-project {
       width: 530px;
-      height: 200px;
+      height: 250px;
       border-radius: 4px;
       object-fit: fill;
 
@@ -74,7 +74,7 @@
 
       margin-bottom: $fz-20;
       img {
-        width: 24px;
+        width: auto;
         height: 24px;
       }
     }
