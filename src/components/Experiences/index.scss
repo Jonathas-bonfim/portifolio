@@ -68,9 +68,14 @@
   // position: relative;
   .container-open {
     border-left: 2px solid $blue;
+
+    .company-title {
+      background-color: $dark-200;
+    }
+
     .details {
       position: absolute;
-      left: 13rem;
+      left: 14rem;
       top: 1.875rem;
       transform: translateY(8%);
 
