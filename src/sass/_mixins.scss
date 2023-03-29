@@ -1,3 +1,9 @@
+@mixin media-max($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
 @mixin shiny-button(
   $width: 60px,
   $alpha: 0.4,
@@ -35,5 +41,50 @@
         transition: $transition linear;
       }
     }
+  }
+}
+
+@mixin scrollbar(
+  $width: 10px,
+  $border-radius: 5px,
+  $thumb-color: #777777,
+  $bg-color: #e5e5e5
+) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: lighten($color: $thumb-color, $amount: 10%);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $bg-color;
+    border-radius: $border-radius;
+  }
+
+  ::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: lighten($color: $thumb-color, $amount: 10%);
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $bg-color;
+    border-radius: $border-radius;
   }
 }

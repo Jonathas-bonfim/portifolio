@@ -1,4 +1,5 @@
 @import "src/sass/variables.scss";
+@import "src/sass/mixins.scss";
 
 // :focus {
 //   outline: none;
@@ -25,6 +26,8 @@ body {
   background-color: $dark;
   color: $gray-light;
   -webkit-font-smoothing: antialiased;
+
+  @include scrollbar(10px, 2px, #000, #2c2c2c);
 }
 
 body,

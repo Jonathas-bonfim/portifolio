@@ -1,8 +1,9 @@
-import { About } from './components/about'
+import { About } from './components/About'
 import { Experiences } from './components/Experiences'
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Home } from './components/Home'
-import { Projects } from './components/projects'
+import { Projects } from './components/Projects'
 import './global/styles.scss'
 import './sass/_index.scss'
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Experiences />
       <Projects />
+      <Footer />
     </>
   )
 }
