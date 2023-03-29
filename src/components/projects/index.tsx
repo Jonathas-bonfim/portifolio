@@ -4,7 +4,7 @@ import './index.scss'
 
 export function Projects() {
   return (
-    <main className='projects'>
+    <main className='projects' id='projects'>
       <div className="container-center">
         <h3>PROJETOS</h3>
         <section>

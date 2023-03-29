@@ -59,7 +59,7 @@ export function Experiences() {
   }
 
   return (
-    <section className="experiences">
+    <section className="experiences" id="experiences">
       <div className="container-center">
         <h3 className="title-section">Experiência</h3>
         <main>

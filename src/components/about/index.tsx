@@ -10,7 +10,7 @@ import './index.scss'
 
 export function About() {
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <div className="container-center">
         <aside className='image'>
           <img src="https://github.com/jonathas-bonfim.png" alt="Foto de perfil" />

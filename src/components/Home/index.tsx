@@ -5,7 +5,7 @@ import github from '../../assets/images/home/github.svg'
 
 export function Home() {
   return (
-    <section className="home">
+    <section className="home" id='home'>
       <div className='container-center'>
         <main className="content-left">
           <p>OLÁ, EU SOU</p>

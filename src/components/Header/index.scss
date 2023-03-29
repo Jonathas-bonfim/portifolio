@@ -54,17 +54,19 @@
     flex-direction: row;
     gap: 62px;
 
-    a {
+    button {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
       font-style: normal;
       font-weight: 500;
       font-size: $fz-18;
       line-height: 22px;
       text-decoration: none;
       color: $gray-light;
-
-      display: flex;
-      flex-direction: column;
-      position: relative;
+      background-color: transparent;
+      border: none;
 
       transition: all 0.2s;
       &:hover {
