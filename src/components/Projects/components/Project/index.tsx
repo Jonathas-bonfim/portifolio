@@ -14,7 +14,9 @@ type ProjectProps = {
 export function Project({ name, description, link, image, icon, icon2, icon3, icon4 }: ProjectProps) {
   return (
     <nav className='project'>
-      <img src={image} alt="Project" className='image-project' />
+      <div className="container-image">
+        <img src={image} alt="Project" className='image-project' />
+      </div>
       <h4>{name}</h4>
       <p>{description}</p>
       <h5>Tecnologias usadas no projeto</h5>

@@ -30,6 +30,14 @@
 
   .project {
     margin-bottom: 5.625rem;
+    .container-image {
+      max-width: 530px;
+      max-height: 250px;
+      overflow: hidden;
+
+      margin-bottom: $fz-40;
+    }
+
     .image-project {
       width: 530px;
       height: 250px;
@@ -37,7 +45,13 @@
       border-left: 2.35px solid $blue;
       object-fit: fill;
 
-      margin-bottom: $fz-40;
+      transition: all 1s;
+      &:hover {
+        transform: scale(1.2);
+        filter: brightness(1.1);
+
+        transition: all 1s;
+      }
     }
 
     h4 {
@@ -125,10 +139,12 @@
       }
 
       .project {
+        .container-image {
+          margin-bottom: 1rem;
+        }
         .image-project {
           width: 100%;
           height: auto;
-          margin-bottom: 1rem;
         }
         h4 {
           margin-bottom: 0.87rem;
