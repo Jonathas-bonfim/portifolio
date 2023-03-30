@@ -1,4 +1,4 @@
-import github from '../../../../assets/images/about/github.svg'
+import linkIMG from '../../../../assets/images/projects/link.svg'
 
 type ProjectProps = {
   name: string,
@@ -24,7 +24,10 @@ export function Project({ name, description, link, image, icon, icon2, icon3, ic
         <img src={icon3} />
         <img src={icon4} />
       </div>
-      <a href={link} target="_blank">Visualizar</a>
+      <a href={link} target="_blank">
+        <img src={linkIMG} className='icon' />
+        Visualizar
+      </a>
     </nav>
   )
 }

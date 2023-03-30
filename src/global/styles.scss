@@ -1,11 +1,6 @@
 @import "src/sass/variables.scss";
 @import "src/sass/mixins.scss";
 
-// :focus {
-//   outline: none;
-//   box-shadow: 0 0 0 2px $dark;
-// }
-
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +23,12 @@ body {
   -webkit-font-smoothing: antialiased;
 
   @include scrollbar(10px, 2px, #000, #2c2c2c);
+
+  @include media-max(1350px) {
+    .container-center {
+      padding-inline: 20px;
+    }
+  }
 }
 
 body,
@@ -45,8 +46,8 @@ input {
   cursor: pointer;
 }
 
-// @media screen and (max-width: 768px) {
-//   html {
-//     font-size: 0.87rem;
-//   }
-// }
+@media screen and (max-width: $breackpoint768) {
+  html {
+    font-size: $fz-14;
+  }
+}

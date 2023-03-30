@@ -1,4 +1,5 @@
 @import "../../sass/variables";
+@import "src/sass/mixins.scss";
 
 .projects {
   background-color: $dark-200;
@@ -33,6 +34,7 @@
       width: 530px;
       height: 250px;
       border-radius: 4px;
+      border-left: 2.35px solid $blue;
       object-fit: fill;
 
       margin-bottom: $fz-40;
@@ -98,9 +100,45 @@
       border-width: 2px;
       border-style: solid;
 
+      img {
+        margin-right: $fz-16;
+      }
+
       transition: all 0.2s;
       &:hover {
         filter: brightness(1.5);
+      }
+    }
+  }
+  @include media-max($breackpoint1024) {
+    .container-center {
+      .project {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  @include media-max($breackpoint768) {
+    .container-center {
+      h3 {
+        margin-top: 3rem;
+      }
+
+      .project {
+        .image-project {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+        h4 {
+          margin-bottom: 0.87rem;
+        }
+        p {
+          margin-bottom: 0.625rem;
+        }
+        a {
+          width: 100%;
+        }
       }
     }
   }

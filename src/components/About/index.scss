@@ -1,4 +1,6 @@
 @import "../../sass/variables";
+@import "src/sass/mixins.scss";
+
 .about {
   height: 35.313rem;
   background-color: $dark-200;
@@ -7,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 11rem;
-    margin: 0 auto;
+    margin-inline: auto;
 
     max-width: $max-width-container-center;
     width: 100%;
@@ -124,5 +126,40 @@
       border-width: 2px;
       border-style: solid;
     }
+  }
+
+  @include media-max($breackpoint1024) {
+    .container-center {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 0;
+    }
+    .image {
+      display: none;
+    }
+  }
+  @include media-max($breackpoint768) {
+    height: 40.313rem;
+    .container-center {
+      .text {
+        h2 {
+          margin-top: 1rem;
+        }
+
+        p {
+          &:last-child {
+            margin-bottom: $fz-22;
+          }
+        }
+      }
+      .medias-sociais {
+        margin-bottom: $fz-22;
+      }
+    }
+  }
+
+  @include media-max($breackpoint480) {
+    height: 48rem;
   }
 }

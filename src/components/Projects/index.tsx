@@ -44,7 +44,7 @@ export function Projects() {
             icon='https://img.shields.io/badge/-React-05122A?style=flat&logo=react'
             icon2='https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript'
             icon3='https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass'
-            icon4='https://img.shields.io/badge/-firebase-05122A?style=flat&logo=firebase'
+            // icon4='https://img.shields.io/badge/-firebase-05122A?style=flat&logo=firebase'
             image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/atualsocial.png?alt=media&token=5b33bded-413f-4787-9baf-33be37bdf729'
             link='https://youtu.be/vG9A6kNlfdE?list=PL54q87_dQSc5ErWIj5NVhbIoYba_jcAWJ'
           />

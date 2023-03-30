@@ -19,7 +19,7 @@
     border-bottom: 2px solid $dark-200;
   }
 
-  .container-center-header {
+  .container-center {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +79,13 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  @include media-max($breackpoint1024) {
+    width: 100%;
+    .header-content {
+      display: none;
     }
   }
 }

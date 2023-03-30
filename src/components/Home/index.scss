@@ -17,6 +17,7 @@
     justify-content: flex-start;
 
     max-width: $max-width-container-center;
+    padding-inline: 10px;
     width: 100%;
     height: 100%;
   }
@@ -94,5 +95,16 @@
   .container-right {
     position: absolute;
     right: 0;
+  }
+
+  @include media-max($breackpoint1024) {
+    flex-direction: column;
+
+    .container-center {
+      justify-content: center;
+    }
+    .container-right {
+      display: none;
+    }
   }
 }

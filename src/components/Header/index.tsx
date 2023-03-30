@@ -10,7 +10,7 @@ export function Header() {
   }
   return (
     <header className="header-desktop">
-      <section className="container-center-header">
+      <section className="container-center">
         <aside>
           <button className='button'>
             Portifólio
