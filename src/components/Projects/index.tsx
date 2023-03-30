@@ -67,7 +67,7 @@ export function Projects() {
             icon3='https://img.shields.io/badge/-StyledComponents-05122A?style=flat&logo=styledComponents'
             // icon4='https://img.shields.io/badge/-firebase-05122A?style=flat&logo=firebase'
             image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/gorestaurant.png?alt=media&token=cb567ada-da82-4713-b8a5-0bc3e2dd664e'
-            link='https://youtu.be/vG9A6kNlfdE?list=PL54q87_dQSc5ErWIj5NVhbIoYba_jcAWJ'
+            link='https://github.com/Jonathas-bonfim/GoRestaurant'
           />
         </section>
       </div>
