@@ -8,7 +8,7 @@ export function Projects() {
         <h3>PROJETOS</h3>
         <section>
           <Project
-            name='Loja Speedo'
+            name='Speedo'
             description='Projeto e-commerce em Vtex IO de equipamentos esportivos.'
             icon='https://img.shields.io/badge/-React-05122A?style=flat&logo=react'
             icon2='https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript'
@@ -26,6 +26,16 @@ export function Projects() {
             icon4='https://img.shields.io/badge/-vtex-05122A?style=flat&logo=vtex'
             image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/jeandarrot.png?alt=media&token=81b7562a-8093-4653-897c-fc4ad9bc46e7'
             link='https://www.jeandarrot.com.br/'
+          />
+          <Project
+            name='Bluwe'
+            description='Projeto e-commerce em Vtex IO de cosméticos femininos.'
+            icon='https://img.shields.io/badge/-React-05122A?style=flat&logo=react'
+            icon2='https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript'
+            icon3='https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass'
+            icon4='https://img.shields.io/badge/-vtex-05122A?style=flat&logo=vtex'
+            image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/bluwe.png?alt=media&token=401043fd-7232-4d83-a7e7-acdefd13140e'
+            link='https://www.bluwe.com.br/'
           />
           <Project
             name='ES Tech'
@@ -46,6 +56,17 @@ export function Projects() {
             icon3='https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass'
             // icon4='https://img.shields.io/badge/-firebase-05122A?style=flat&logo=firebase'
             image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/atualsocial.png?alt=media&token=5b33bded-413f-4787-9baf-33be37bdf729'
+            link='https://youtu.be/vG9A6kNlfdE?list=PL54q87_dQSc5ErWIj5NVhbIoYba_jcAWJ'
+          />
+
+          <Project
+            name='GoRestaurant'
+            description='Projeto de estudo simulando um cardápio de restaurante.'
+            icon='https://img.shields.io/badge/-React-05122A?style=flat&logo=react'
+            icon2='https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript'
+            icon3='https://img.shields.io/badge/-StyledComponents-05122A?style=flat&logo=styledComponents'
+            // icon4='https://img.shields.io/badge/-firebase-05122A?style=flat&logo=firebase'
+            image='https://firebasestorage.googleapis.com/v0/b/letmeask-87b25.appspot.com/o/gorestaurant.png?alt=media&token=cb567ada-da82-4713-b8a5-0bc3e2dd664e'
             link='https://youtu.be/vG9A6kNlfdE?list=PL54q87_dQSc5ErWIj5NVhbIoYba_jcAWJ'
           />
         </section>

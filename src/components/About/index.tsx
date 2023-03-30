@@ -1,3 +1,4 @@
+import profile from '../../assets/images/about/profile.jpg'
 import linkedin from '../../assets/images/about/linkedin.svg'
 import github from '../../assets/images/about/github.svg'
 import youtube from '../../assets/images/about/youtube.svg'
@@ -13,7 +14,7 @@ export function About() {
     <section className='about' id='about'>
       <div className="container-center">
         <aside className='image'>
-          <img src="https://github.com/jonathas-bonfim.png" alt="Foto de perfil" />
+          <img src={profile} alt="Foto de perfil" />
         </aside>
         <main>
           <article className="text">
