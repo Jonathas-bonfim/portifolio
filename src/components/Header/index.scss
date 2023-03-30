@@ -28,6 +28,14 @@
     width: 100%;
   }
 
+  .menu-hamburguer {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    max-height: 0;
+    max-width: 0;
+  }
+
   .button {
     font-family: $primaryFont;
     font-style: normal;
@@ -47,7 +55,8 @@
     );
   }
 
-  .header-content {
+  .header-content,
+  .header-content--open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,8 +93,42 @@
 
   @include media-max($breackpoint1024) {
     width: 100%;
+    position: relative;
+
+    .menu-hamburguer {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      max-height: none;
+      max-width: none;
+
+      background: transparent;
+      border: none;
+    }
+
     .header-content {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      max-height: 0;
+      max-width: 0;
+      position: absolute;
+
+      // transition: all 0.1s;
+
+      &--open {
+        flex-direction: column;
+        z-index: 1;
+
+        position: absolute;
+        top: 115px;
+        left: 0;
+        right: 0;
+        background: #000;
+        height: 50vh;
+
+        // transition: all 0.1s;
+      }
     }
   }
 }
