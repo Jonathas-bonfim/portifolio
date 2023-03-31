@@ -10,7 +10,7 @@ export function Home() {
         <main className="content-left">
           <p>OLÁ, EU SOU</p>
           <h1>JÔNATHAS BONFIM</h1>
-          <p className='career'>DESENVOLVEDOR FONT-END </p>
+          <p className='career'>DESENVOLVEDOR FRONT-END </p>
           <div className="buttons">
             <a className='linkedin' href="https://www.linkedin.com/in/jonathas-bonfim/" target='_blank'>
               <img src={linkedin} alt="Linkedin" />
