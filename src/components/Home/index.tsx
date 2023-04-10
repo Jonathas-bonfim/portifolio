@@ -1,9 +1,22 @@
-import './index.scss'
+import { useEffect } from 'react'
+import ReactGA from 'react-ga'
+
 import looper from '../../assets/images/home/looper.svg'
 import linkedin from '../../assets/images/home/linkedin.svg'
 import github from '../../assets/images/home/github.svg'
+import './index.scss'
+
 
 export function Home() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
+  ReactGA.event({
+    category: 'home',
+    action: "Acesso a home"
+  })
+
   return (
     <section className="home" id='home'>
       <div className='container-center'>
