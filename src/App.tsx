@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import './global/styles.scss'
 import './sass/_index.scss'
 
-const MEASUREMENT_ID = "G-9VQJ8XZKPN";
+const MEASUREMENT_ID = "G-BLM1Y19YNK";
 ReactGA.initialize(MEASUREMENT_ID)
 
 function App() {
