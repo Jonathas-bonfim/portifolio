@@ -1,12 +1,49 @@
+import { api } from '../../services/api'
+import { useEffect, useState } from 'react'
 import { Project } from './components/Project'
 import './index.scss'
 
 export function Projects() {
+  const [repositoriesGithub, setRepositoriesGithub] = useState<any>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get<[]>('');
+        const filteredRepositories = response.data.filter((repo: any) => repo.topics.includes('portifolio'));
+
+        const repositoriesWithPreview = filteredRepositories.map((repo: any) => {
+          const previewUrl = `https://raw.githubusercontent.com/${repo.full_name}/main/preview.png`;
+          return {
+            ...repo,
+            previewUrl: previewUrl,
+          };
+        });
+
+        setRepositoriesGithub(repositoriesWithPreview);
+
+      } catch (error) {
+        console.log({ error });
+      }
+    };
+    fetchData();
+  }, []);
+
+  console.log({ repositoriesGithub });
+
+
+
   return (
     <main className='projects' id='projects'>
       <div className="container-center">
         <h3>PROJETOS</h3>
         <section>
+          <Project
+            description='teste'
+            image='https://raw.githubusercontent.com/Jonathas-bonfim/books/main/preview.png'
+            link=''
+            name='teste'
+          />
           <Project
             name='Speedo'
             description='Projeto e-commerce em Vtex IO de equipamentos esportivos.'
