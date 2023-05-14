@@ -9,12 +9,16 @@ export function Header() {
   function handleClickScroll(item: string) {
     const element = document.getElementById(item);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = document.querySelector('.header-desktop')?.clientHeight || 0;
+      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: offsetTop - headerHeight, behavior: 'smooth' });
     }
     if (window.innerWidth <= 1024) {
-      setMenuMobileOpen(!menuMobileOpen)
+      setMenuMobileOpen(!menuMobileOpen);
     }
   }
+
+
   function handleToggleMenuMobile() {
     setMenuMobileOpen(!menuMobileOpen)
   }
