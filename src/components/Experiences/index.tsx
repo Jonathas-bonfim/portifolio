@@ -5,14 +5,14 @@ import './index.scss'
 const experiences: ExperiencesProps[] = [
   {
     id: 1,
-    role: 'Freelancer',
+    role: 'Front-end Developer',
     time: {
-      initial: 'Dez 2021',
+      initial: 'Mai 2023',
       finally: 'Atualmente'
     },
-    company: 'Freelancer',
-    description: 'Como freelancer fui responsável por elaborar e desenvolver projetos front-end e mobile de maneira completa, estruturando, elaborando o design, publicando e testando todas as funcionalidades.',
-    assignments: 'Aplicações Web com React JS | Aplicativos com React Native e Flutter | Responsividade | Integração com API.'
+    company: 'RG System',
+    description: 'Atuo como Desenvolvedor Front-End com ênfase na implementação de novos recursos e na resolução de problemas técnicos, com foco no aprimoramento da experiência do usuário. Minhas principais ferramentas incluem React JS e a integração de microsserviços. Além disso, utilizo o ambiente Azure para gerenciar o ciclo de desenvolvimento de projetos.',
+    assignments: 'React JS | Microsserviços | Azure | Scrum.'
   },
   {
     id: 2,
@@ -22,12 +22,23 @@ const experiences: ExperiencesProps[] = [
       finally: 'Mar 2023'
     },
     company: 'Agência Eplus',
-    description: 'Atuei como desenvolvedor front-end de e-commerce participando do planejamento de sprints e viabilizando funcionalidades solicitadas, integrando e desenvolvendo componentes Vtex IO. Em Vtex CMS era responsável por desenvolver features, corrigir bugs, analisar e melhorar a performance.',
+    description: 'Atuei como Desenvolvedor front-end de e-commerce participando do planejamento de sprints e viabilizando funcionalidades solicitadas, integrando e desenvolvendo componentes Vtex IO. Em Vtex CMS era responsável por desenvolver features, corrigir bugs, analisar e melhorar a performance.',
     assignments: 'Desenvolvimento de e-commerce Web | Desenvolvimento de Features | Manutenção em códigos legados e minificados em JavaScript e jQuery | Scrum - Compromisso de prazo e funcionalidades definidas na sprint.'
 
   },
   {
     id: 3,
+    role: 'Freelancer',
+    time: {
+      initial: 'Dez 2021',
+      finally: 'Atualmente'
+    },
+    company: 'Freelancer',
+    description: 'Como Freelancer fui responsável por elaborar e desenvolver projetos front-end e mobile de maneira completa, estruturando, elaborando o design, publicando e testando todas as funcionalidades.',
+    assignments: 'Aplicações Web com React JS | Aplicativos com React Native e Flutter | Responsividade | Integração com API.'
+  },
+  {
+    id: 4,
     role: 'Qualitaty Assurance Developer',
     time: {
       initial: 'Fev 2017',

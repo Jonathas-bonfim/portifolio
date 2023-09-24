@@ -7,6 +7,8 @@ import curriculumPDF from '../../assets/images/about/curriculum.svg'
 import email from '../../assets/images/about/email.svg'
 import curriculum from '../../assets/files/about/curriculum.pdf'
 
+import { FaWhatsapp } from 'react-icons/fa'
+
 import './index.scss'
 
 export function About() {
@@ -31,6 +33,11 @@ export function About() {
             </p>
           </article>
           <article className="medias-sociais">
+
+            <a href="https://api.whatsapp.com/send/?phone=5527996942828" target="_blank">
+              {/* <img src={FaWhatsapp} alt="Linkedin" /> */}
+              <FaWhatsapp />
+            </a>
             <a href="https://www.linkedin.com/in/jonathas-bonfim/" target="_blank">
               <img src={linkedin} alt="Linkedin" />
             </a>

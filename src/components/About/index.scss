@@ -74,7 +74,9 @@
       width: $fz-24;
       height: $fz-24;
 
-      img {
+      img,
+      svg {
+        color: #55ffff;
         width: 100%;
         height: 100%;
       }
