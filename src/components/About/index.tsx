@@ -1,11 +1,11 @@
-import profile from '../../assets/images/about/profile.jpg'
-import linkedin from '../../assets/images/about/linkedin.svg'
-import github from '../../assets/images/about/github.svg'
-import youtube from '../../assets/images/about/youtube.svg'
-import instagram from '../../assets/images/about/instagram.svg'
+import curriculum from '../../assets/files/about/curriculum.pdf'
 import curriculumPDF from '../../assets/images/about/curriculum.svg'
 import email from '../../assets/images/about/email.svg'
-import curriculum from '../../assets/files/about/curriculum.pdf'
+import github from '../../assets/images/about/github.svg'
+import instagram from '../../assets/images/about/instagram.svg'
+import linkedin from '../../assets/images/about/linkedin.svg'
+import profile from '../../assets/images/about/profile.jpg'
+import youtube from '../../assets/images/about/youtube.svg'
 
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -23,13 +23,10 @@ export function About() {
             <h2>SOBRE MIM</h2>
             <h3>São Gabriel da Palha, Brasil</h3>
             <p>
-              Sou desenvolvedor de software apaixonado pelo que faço, dedicado e focado em alcançar as metas, busco sempre
-              entregar mais do que é solicitado e executo todas as tarefas da melhor maneira possível.
+              Sou desenvolvedor especialista em front-end com sólida experiência em React.js, JavaScript, Next.js e TypeScript. Tenho atuado em projetos que envolvem React Native, AWS, Azure DevOps, microsserviços e Docker, proporcionando soluções eficientes e inovadoras para os desafios técnicos.
             </p>
             <p>
-              Em minha carreira profissional possuo histórico de ajudar a melhorar os processos internos, resolver problemas de
-              forma eficiente e objetiva, desenvolver sites de acordo com o layout solicitado e refatorar códigos legados, buscando
-              sempre o melhor para a equipe e para o usuário final.
+              Minha trajetória profissional é marcada pela constante busca por aprimoramento e atualização nas melhores práticas do desenvolvimento web. Com um olhar atento para a usabilidade e performance, contribuo para a criação de interfaces intuitivas e funcionais que elevam a experiência do usuário.
             </p>
           </article>
           <article className="medias-sociais">
