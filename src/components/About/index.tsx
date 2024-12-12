@@ -1,3 +1,5 @@
+import curriculumPDF from '../../assets/files/about/curriculum.pdf'
+import curriculum from '../../assets/images/about/curriculum.svg'
 import email from '../../assets/images/about/email.svg'
 import github from '../../assets/images/about/github.svg'
 import instagram from '../../assets/images/about/instagram.svg'
@@ -44,10 +46,10 @@ export function About() {
             </a>
           </article>
           <article className='buttons'>
-            {/* <a href={curriculum} className="curriculum" target="_blank">
+            <a href={curriculum} className="curriculum" target="_blank">
               <img src={curriculumPDF} alt="Currrículo" />
               Currículo
-            </a> */}
+            </a>
             <a href="mailto:jonathas.santos.bonfim@gmail.com" className='email'>
               <img src={email} alt="E-mail" />
               E-mail
