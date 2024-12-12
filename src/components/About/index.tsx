@@ -1,5 +1,3 @@
-import curriculum from '../../assets/files/about/curriculum.pdf'
-import curriculumPDF from '../../assets/images/about/curriculum.svg'
 import email from '../../assets/images/about/email.svg'
 import github from '../../assets/images/about/github.svg'
 import instagram from '../../assets/images/about/instagram.svg'
@@ -20,13 +18,10 @@ export function About() {
         </aside>
         <main>
           <article className="text">
-            <h2>SOBRE MIM</h2>
-            <h3>São Gabriel da Palha, Brasil</h3>
+            <h2>ABOUT ME</h2>
+            <h3>Espirito Santo, Brazil</h3>
             <p>
-              Sou desenvolvedor especialista em front-end com sólida experiência em React.js, JavaScript, Next.js e TypeScript. Tenho atuado em projetos que envolvem React Native, AWS, Azure DevOps, microsserviços e Docker, proporcionando soluções eficientes e inovadoras para os desafios técnicos.
-            </p>
-            <p>
-              Minha trajetória profissional é marcada pela constante busca por aprimoramento e atualização nas melhores práticas do desenvolvimento web. Com um olhar atento para a usabilidade e performance, contribuo para a criação de interfaces intuitivas e funcionais que elevam a experiência do usuário.
+              Software developer with over 3 years of programming experience and specialized in front-end development with solid expertise in React.js, Next.js, TypeScript, and advanced integrations with React Native. I contribute to the creation of high-performance and scalable solutions that positively impact thousands of users and optimize strategic operations. Throughout my career, I have participated in challenging, high-impact projects, such as robust e-commerce platforms, public health management systems, and automation tools. My work combines technical excellence, mastery of agile methodologies, and the use of modern technologies to deliver results.
             </p>
           </article>
           <article className="medias-sociais">
@@ -49,10 +44,10 @@ export function About() {
             </a>
           </article>
           <article className='buttons'>
-            <a href={curriculum} className="curriculum" target="_blank">
+            {/* <a href={curriculum} className="curriculum" target="_blank">
               <img src={curriculumPDF} alt="Currrículo" />
               Currículo
-            </a>
+            </a> */}
             <a href="mailto:jonathas.santos.bonfim@gmail.com" className='email'>
               <img src={email} alt="E-mail" />
               E-mail

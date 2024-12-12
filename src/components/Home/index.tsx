@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import ReactGA from 'react-ga'
 
-import looper from '../../assets/images/home/looper.svg'
-import linkedin from '../../assets/images/home/linkedin.svg'
 import github from '../../assets/images/home/github.svg'
+import linkedin from '../../assets/images/home/linkedin.svg'
+import looper from '../../assets/images/home/looper.svg'
 import './index.scss'
 
 
@@ -21,9 +21,9 @@ export function Home() {
     <section className="home" id='home'>
       <div className='container-center'>
         <main className="content-left">
-          <p>OLÁ, EU SOU</p>
+          <p>HELLO, I AM</p>
           <h1>JÔNATHAS BONFIM</h1>
-          <p className='career'>DESENVOLVEDOR FRONT-END </p>
+          <p className='career'>SOFTWARE ENGINEER </p>
           <div className="buttons">
             <a className='linkedin' href="https://www.linkedin.com/in/jonathas-bonfim/" target='_blank'>
               <img src={linkedin} alt="Linkedin" />

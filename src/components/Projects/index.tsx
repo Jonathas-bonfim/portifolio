@@ -1,8 +1,8 @@
-import { api } from '../../services/api'
-import { useEffect, useState } from 'react'
-import { Project } from './components/Project'
-import './index.scss'
+import { useEffect, useState } from 'react';
+import { api } from '../../services/api';
 import { Pagination } from './components/Pagination';
+import { Project } from './components/Project';
+import './index.scss';
 
 interface repositoriesGithubProps {
   id: string;
@@ -63,7 +63,7 @@ export function Projects() {
   return (
     <main className='projects' id='projects'>
       <div className="container-center">
-        <h3>PROJETOS</h3>
+        <h3>Projects</h3>
         {
           <Pagination prePage={prePage}
             nextPage={nextPage}

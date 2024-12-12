@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import hamburguer from '../../assets/images/header/menu-hamburguer.svg'
+import hamburguer from '../../assets/images/header/menu-hamburguer.svg';
 
-import './index.scss'
+import './index.scss';
 
 export function Header() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
@@ -36,9 +36,9 @@ export function Header() {
         </button>
         <nav className={menuMobileOpen ? 'header-content--open' : 'header-content'}>
           <button onClick={() => handleClickScroll('home')}>Home</button>
-          <button onClick={() => handleClickScroll('about')}>Sobre mim</button>
-          <button onClick={() => handleClickScroll('experiences')}>Experiência</button>
-          <button onClick={() => handleClickScroll('projects')}>Projetos</button>
+          <button onClick={() => handleClickScroll('about')}>About me</button>
+          <button onClick={() => handleClickScroll('experiences')}>Work History</button>
+          <button onClick={() => handleClickScroll('projects')}>Projects</button>
         </nav>
       </section>
     </header>
