@@ -46,8 +46,8 @@ export function About() {
             </a>
           </article>
           <article className='buttons'>
-            <a href={curriculum} className="curriculum" target="_blank">
-              <img src={curriculumPDF} alt="Currrículo" />
+            <a href={curriculumPDF} className="curriculum" target="_blank">
+              <img src={curriculum} alt="Currrículo" />
               Currículo
             </a>
             <a href="mailto:jonathas.santos.bonfim@gmail.com" className='email'>
