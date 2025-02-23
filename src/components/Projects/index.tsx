@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
+import { handleClickScroll } from '../handleClickScroll';
 import { Pagination } from './components/Pagination';
 import { Project } from './components/Project';
 import './index.scss';
@@ -49,14 +50,17 @@ export function Projects() {
   function prePage() {
     if (currentPage !== 1) {
       setCurrentPage(currentPage - 1)
+      handleClickScroll('projects')
     }
   }
   function changeCPage(id: number) {
     setCurrentPage(id)
+    handleClickScroll('projects')
   }
   function nextPage() {
     if (currentPage !== nPage) {
       setCurrentPage(currentPage + 1)
+      handleClickScroll('projects')
     }
   }
 

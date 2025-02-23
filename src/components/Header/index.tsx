@@ -1,27 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import hamburguer from '../../assets/images/header/menu-hamburguer.svg';
 
+import { handleClickScroll } from '../handleClickScroll';
 import './index.scss';
 
 export function Header() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
 
-  function handleClickScroll(item: string) {
-    const element = document.getElementById(item);
-    if (element) {
-      const headerHeight = document.querySelector('.header-desktop')?.clientHeight || 0;
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: offsetTop - headerHeight, behavior: 'smooth' });
-    }
-    if (window.innerWidth <= 1024) {
-      setMenuMobileOpen(!menuMobileOpen);
-    }
-  }
-
-
   function handleToggleMenuMobile() {
     setMenuMobileOpen(!menuMobileOpen)
   }
+
+  useEffect(() => {
+    if (window.innerWidth <= 1024) {
+      setMenuMobileOpen(!menuMobileOpen);
+    }
+  }, [window.innerWidth])
 
   return (
     <header className="header-desktop">

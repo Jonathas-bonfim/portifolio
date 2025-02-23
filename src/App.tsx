@@ -1,11 +1,11 @@
+import { useEffect } from 'react'
+import ReactGA from 'react-ga'
 import { About } from './components/About'
 import { Experiences } from './components/Experiences'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Home } from './components/Home'
 import { Projects } from './components/Projects'
-import ReactGA from 'react-ga'
-import { useEffect } from 'react'
 import './global/styles.scss'
 import './sass/_index.scss'
 
