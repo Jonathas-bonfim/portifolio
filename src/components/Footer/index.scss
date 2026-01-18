@@ -3,6 +3,9 @@
 .footer {
   height: 6.25rem;
   width: 100%;
+  background-color: $light;
+  border-top: 1px solid $border;
+  color: $text-secondary;
 
   .container-center {
     max-width: $max-width-container-center;

@@ -18,11 +18,11 @@ p {
 }
 
 body {
-  background-color: $dark;
-  color: $gray-light;
+  background-color: $light;
+  color: $text-primary;
   -webkit-font-smoothing: antialiased;
 
-  @include scrollbar(10px, 2px, #000, #2c2c2c);
+  @include scrollbar(10px, 2px, #d1d5db, #f3f4f6);
 
   @include media-max(1350px) {
     .container-center {
@@ -36,8 +36,23 @@ input,
 textarea,
 button {
   font-family: $primaryFont;
-  font-weight: 300;
+  font-weight: 400; // Peso normal para melhor legibilidade
   font-size: 1rem;
+  line-height: 1.6; // Line-height generoso para leitura confortável
+}
+
+// Melhorias de Tipografia para Conversão
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; // Peso médio-forte para hierarquia clara
+  line-height: 1.2; // Line-height mais apertado para títulos
+  color: $text-primary; // Máximo contraste
+  letter-spacing: -0.02em; // Letter-spacing sutil para profissionalismo
+}
+
+p {
+  color: $text-body; // Cor otimizada para leitura
+  line-height: 1.7; // Line-height generoso para parágrafos
+  font-weight: 400;
 }
 
 button,

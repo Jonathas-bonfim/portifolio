@@ -2,7 +2,8 @@
 @import "src/sass/mixins.scss";
 
 .projects {
-  background-color: $dark-200;
+  background-color: $dark;
+  padding: 4rem 0;
 
   .container-center {
     display: flex;
@@ -21,7 +22,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 29px;
-    color: #ffffff;
+    color: $primary;
     text-transform: uppercase;
     margin-bottom: 1.625rem;
     margin-top: 6.25rem;
@@ -49,15 +50,15 @@
       width: 530px;
       height: 250px;
       border-radius: 4px;
-      border-left: 2.35px solid $blue;
+      border-left: 3px solid $primary;
       object-fit: fill;
 
-      transition: all 1s;
+      transition: all 0.3s ease;
       &:hover {
-        transform: scale(1.2);
-        filter: brightness(1.1);
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
-        transition: all 1s;
+        transition: all 0.3s ease;
       }
     }
 
@@ -66,7 +67,7 @@
       font-weight: 500;
       font-size: $fz-24;
       line-height: 29px;
-      color: $light;
+      color: $text-primary;
 
       margin-bottom: $fz-30;
     }
@@ -78,10 +79,10 @@
       width: 100%;
 
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400; // Peso normal para legibilidade
       font-size: $fz-16;
-      line-height: 26px;
-      color: $gray-light;
+      line-height: 1.65; // Line-height generoso para leitura
+      color: $text-body; // Cor otimizada para corpo de texto
 
       margin-bottom: $fz-26;
     }
@@ -91,7 +92,7 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 24px;
-      color: $blue;
+      color: $primary;
 
       margin-bottom: $fz-14;
     }
@@ -122,17 +123,18 @@
       color: $light;
       text-decoration: none;
 
-      border-image: linear-gradient(to left bottom, #10d7e2 40%, #9358f7 90%) 1;
-      border-width: 2px;
-      border-style: solid;
+      background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+      border: none;
+      border-radius: 8px;
 
       img {
         margin-right: $fz-16;
       }
 
-      transition: all 0.2s;
+      transition: all 0.3s ease;
       &:hover {
-        filter: brightness(1.5);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
       }
     }
   }

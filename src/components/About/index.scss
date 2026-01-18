@@ -2,8 +2,9 @@
 @import "src/sass/mixins.scss";
 
 .about {
-  height: 44.313rem;
-  background-color: $dark-200;
+  min-height: 44.313rem;
+  background-color: $dark;
+  padding: 4rem 0;
   .container-center {
     display: flex;
     align-items: center;
@@ -20,11 +21,11 @@
     img {
       width: 367px;
       height: 367px;
-      border-radius: 4px;
+      border-radius: 12px;
 
       object-fit: contain;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07),
+        0 10px 25px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -35,7 +36,7 @@
       font-size: $fz-24;
       line-height: 29px;
       text-transform: uppercase;
-      color: $light;
+      color: $primary;
 
       margin-bottom: $fz-40;
     }
@@ -44,17 +45,18 @@
       font-style: normal;
       font-weight: 500;
       font-size: $fz-20;
-      line-height: 24px;
-      color: $light;
+      line-height: 1.4;
+      color: $text-secondary; // Subtítulo com bom contraste
       margin-bottom: $fz-20;
     }
 
     p {
       text-align: justify;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400; // Peso normal para melhor legibilidade
       font-size: $fz-18;
-      line-height: 32px;
+      line-height: 1.75; // Line-height generoso para leitura confortável
+      color: $text-body; // Cor otimizada para corpo de texto (alto contraste)
 
       &:last-child {
         margin-bottom: 42px;
@@ -76,14 +78,15 @@
 
       img,
       svg {
-        color: #55ffff;
+        color: $primary;
         width: 100%;
         height: 100%;
       }
 
-      transition: all 0.2s;
+      transition: all 0.3s ease;
       &:hover {
-        filter: brightness(1.7);
+        color: $primary-dark;
+        transform: translateY(-2px);
       }
     }
   }
@@ -110,23 +113,21 @@
       text-decoration: none;
       color: $light;
 
-      transition: all 0.2s;
+      transition: all 0.3s ease;
       &:hover {
-        filter: brightness(1.5);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
     }
 
     .curriculum {
-      border-image: linear-gradient(to right bottom, #d24074, #6518b4) 1;
-      border-width: 2px;
-      border-style: solid;
-      border-radius: 4px;
+      background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+      border: none;
     }
 
     .email {
-      border-image: linear-gradient(to left bottom, #10d7e2 40%, #9358f7 90%) 1;
-      border-width: 2px;
-      border-style: solid;
+      background: linear-gradient(135deg, $text-secondary 0%, $text-primary 100%);
+      border: none;
     }
   }
 

@@ -1,11 +1,37 @@
 //Fontes
 $primaryFont: "Inter", sans-serif;
-// Cores
+
+// Cores - Paleta Profissional para Conversão (Alta Legibilidade)
 $light: #ffffff;
-$dark: #121212;
-$dark-200: #151515;
-$blue: #00d2df;
-$gray-light: #c4c4c4;
+$dark: #fafbfc; // Fundo alternativo sutil
+$dark-200: #ffffff;
+
+// Cor Primária - Azul Royal Escuro (Transmite Confiança e Profissionalismo)
+$primary: #1e3a8a; // Azul royal escuro - cor principal
+$primary-dark: #1e40af; // Azul mais escuro para hover
+$primary-light: #3b82f6; // Azul médio para destaques
+$primary-hover: #1e40af; // Hover states
+
+// Cor Secundária - Verde Esmeralda Profissional (Transmite Crescimento e Sucesso)
+$secondary: #047857; // Verde esmeralda escuro
+$secondary-dark: #065f46;
+$secondary-light: #10b981;
+
+// Cores de Texto - Alto Contraste para Máxima Legibilidade (WCAG AAA)
+$text-primary: #0f172a; // Preto/slate muito escuro - títulos e texto principal
+$text-secondary: #1e293b; // Slate escuro - texto secundário (contraste 14.5:1)
+$text-body: #334155; // Slate médio-escuro - corpo de texto (contraste 12:1)
+$text-light: #64748b; // Slate médio - labels e textos auxiliares
+
+// Bordas e Dividers
+$border: #e2e8f0; // Borda sutil
+$border-light: #f1f5f9; // Borda muito leve
+$border-medium: #cbd5e1; // Borda média
+
+// Acentos e Estados
+$accent: #1e3a8a; // Cor de destaque principal
+$success: #047857; // Verde de sucesso
+$hover-bg: #f8fafc; // Fundo hover sutil
 
 //Container center
 $max-width-container-center: 1220px;

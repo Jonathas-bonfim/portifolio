@@ -15,8 +15,9 @@
   width: 100%;
   z-index: 1;
 
-  background-color: #000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: $light;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $border;
 
   .container-center {
     display: flex;
@@ -41,7 +42,7 @@
     font-weight: 500;
     font-size: $fz-24;
     line-height: 29px;
-    color: $blue;
+    color: $primary;
 
     border: none;
     background: transparent;
@@ -72,18 +73,20 @@
       font-size: $fz-18;
       line-height: 22px;
       text-decoration: none;
-      color: $gray-light;
+      color: $text-body; // Bom contraste para navegação
       background-color: transparent;
       border: none;
+      font-weight: 500; // Peso médio para destaque em navegação
 
-      transition: all 0.2s;
+      transition: all 0.3s ease;
+
       &:hover {
-        filter: brightness(1.5);
+        color: $primary;
         &::after {
           content: "";
           position: absolute;
           bottom: -3px;
-          border: 1px solid $blue;
+          border: 1px solid $primary;
           width: 100%;
         }
       }
@@ -123,8 +126,10 @@
         top: 115px;
         left: 0;
         right: 0;
-        background: #000;
+        background: $light;
+        border-top: 1px solid $border;
         height: 50vh;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
         // transition: all 0.1s;
       }

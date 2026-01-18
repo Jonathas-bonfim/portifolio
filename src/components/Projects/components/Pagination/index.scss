@@ -16,7 +16,8 @@ ul {
 
     height: 2rem;
     width: 2rem;
-    background-color: #fff;
+      background-color: $light;
+      border: 1px solid $border;
     border-radius: 8px;
     border: 1px solid transparent;
 
@@ -28,10 +29,10 @@ ul {
     }
 
     &.active {
-      background-color: $blue;
-      border: 1px solid $blue;
+      background-color: $primary;
+      border: 1px solid $primary;
       button {
-        color: #fff;
+        color: $light;
       }
     }
     button {
@@ -47,10 +48,10 @@ ul {
       font-style: normal;
       font-weight: 400;
       font-size: 1rem;
-      color: $blue;
+      color: $primary;
 
       svg {
-        fill: $blue;
+        fill: $primary;
       }
     }
   }
