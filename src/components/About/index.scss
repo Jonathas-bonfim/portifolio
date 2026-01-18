@@ -76,16 +76,29 @@
       width: $fz-24;
       height: $fz-24;
 
-      img,
+      img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0); // Converte imagens SVG para preto
+      }
+
       svg {
-        color: $primary;
+        color: $text-primary;
+        fill: $text-primary;
         width: 100%;
         height: 100%;
       }
 
       transition: all 0.3s ease;
       &:hover {
-        color: $primary-dark;
+        img {
+          opacity: 0.7;
+        }
+        svg {
+          color: $text-primary;
+          fill: $text-primary;
+          opacity: 0.7;
+        }
         transform: translateY(-2px);
       }
     }
